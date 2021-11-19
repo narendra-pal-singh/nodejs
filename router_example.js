@@ -15,6 +15,6 @@ app.get('/blogs', function (req, res) {
 app.get('/blogs/:id', function (req, res) {
     res.send('View Blogs');
 });
-app.listen(8000, function () {
+app.listen(8080, function () {
     console.log('Listening to Port 8080');
 });
