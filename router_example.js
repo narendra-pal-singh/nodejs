@@ -3,6 +3,10 @@ var express = require('express');
 var app = express();
 
 
+app.get('/', function (req, res) {
+    res.send('Welcome Page!');
+});
+
 app.get('/settings', function (req, res) {
     res.send('Settings Page');
 });
@@ -17,7 +21,7 @@ app.get('/blogs/:id', function (req, res) {
 });
 
 app.get('/', function (req, res) {
-    res.send('Hello Joan!');
+    res.send('Welcome Bottom!');
 });
 
 app.listen(8080, function () {
